@@ -76,6 +76,10 @@ font-size: 50px;
   position: absolute;
   top: 300px;
   right: 653px;
+  cursor: pointer;
+}
+.botao-entrar:active{
+  opacity: 0.5;
 }
 .cadastro{
   font-size: 12px;

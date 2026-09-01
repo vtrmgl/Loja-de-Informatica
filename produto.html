@@ -8,12 +8,42 @@
 </head>
 <body>
     <div class="rodape">
-        <h1 class="logo">LOGO</h1>
+        <a href="inicio.html"><h1 class="logo">LOGO</h1></a>
         <input type="search" placeholder="Buscar produtos" class="busca">
         <img src="img/lupa.png" alt="lupa.png" class="lupa-icone">
         <img src="img/perfil.png" alt="foto-perfil.png" class="foto-perfil-icone">
         <input type="button" value="Minha conta" class="minha-conta">
-        <img src="img/carrinho-de-compras.png" alt="carrinho-compras" class="carrinho-icone">
+        <a href="carrinho.html"><img src="img/carrinho-de-compras.png" alt="carrinho-compras" class="carrinho-icone"></a>
+    </div>
+    <div class="aba-escondida">
+        <div class="historico">
+            <img src="img/relogio-de-parede.png" alt="relogio-icone" class="relogio-icone">
+            <p class="texto-historico">Buscas recentes</p>
+            <div class="item-historico">
+                <p>Nome</p>
+                <p>Nome</p>
+                <p>Nome</p>
+            </div>
+            <div class="preco-historico">
+                <p><strong>Preço</strong></p>
+                <p><strong>Preço</strong></p>
+                <p><strong>Preço</strong></p>
+            </div>
+        </div>
+        <div class="texto-categorias">
+            <p>Categorias</p>
+        </div>
+        <div class="categorias-superiores">
+            <div class="item-categorias"></div>
+            <div class="item-categorias"></div>
+            <div class="item-categorias"></div>
+            <div class="item-categorias"></div>
+        </div>
+        <div class="categorias-inferiores">
+            <div class="item-categorias"></div>
+            <div class="item-categorias"></div>
+            <div class="item-categorias"></div>
+        </div>
     </div>
     <div class="informacoes-produto">
         <p class="img-produto">img produto</p>
@@ -30,7 +60,7 @@
             <p class="img-pequena">img</p>
         </div>
         <div class="compraroucarrinho">
-            <input type="button" value="Comprar" class="comprar-carrinho">
+            <a href="carrinho.html"><input type="button" value="Comprar" class="comprar-carrinho"></a>
             <p class="ou">ou</p>
             <input type="button" value="Carrinho" class="comprar-carrinho">
         </div>
@@ -39,4 +69,18 @@
         <p class="texto-promocional">img promocional</p>
     </div>
 </body>
+
+<script>
+    const inputBusca = document.querySelector('.busca');
+    const abaEscondida = document.querySelector('.aba-escondida');
+    inputBusca.addEventListener('focus', () => {
+        abaEscondida.classList.add('mostrar-aba');
+    });
+    document.addEventListener('click', (evento) => {
+        if (!inputBusca.contains(evento.target) && !abaEscondida.contains(evento.target)) {
+            abaEscondida.classList.remove('mostrar-aba');
+        }
+    });
+</script>
+
 </html>
