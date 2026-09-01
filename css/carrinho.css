@@ -42,12 +42,48 @@ body{
   margin-left: 0px;
   display: flex;
 }
+.lupa-icone{
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 145px;
+  right: 630px;
+}
+.foto-perfil-icone{
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 35px;
+  right: 520px;
+}
+.minha-conta{
+  width: 200px;
+  height: 40px;
+  padding: 0px 25px;
+  background-color: #f2f2f2; 
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  color: #333;
+  outline: none;
+  position: absolute;
+  top: 30px;
+  right: 300px;
+}
+.tela-inicial-icone{
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 35px;
+  right: 250px;
+}
 .ret-superior{
   background-color: #d9d9d9;
   width: 300px;
   height: 70px;
-  margin-left: -50px;
-  margin-top: 0px;
+  position: absolute;
+  top: 123px;
+  right: 174px;
 }
 .texto-ret-superior{
   padding: 0px 0px;
@@ -116,7 +152,49 @@ body{
 .ret-inferior{
   background-color: #C0C0C0;
   width: 300px;
-  height: 70px;
-  margin-left: -49px;
-  margin-top: -157px;
+  height: 400px;
+  position: absolute;
+  top: 193px;
+  right: 174px;
+}
+.subtotal-total{
+  line-height: 50px;
+  font-size: 20px;
+  position: absolute;
+  top: 80px;
+  right: 200px;
+}
+.cupom{
+  width: 200px;
+  height: 40px;
+  padding: 0px 4px;
+  background-color: #f2f2f2;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  color: #333;
+  position: absolute;
+  top: 20px;
+  right: 50px;
+}
+.botao{
+  width: 200px;
+  height: 50px;
+  padding: 0px 25px;
+  background-color: #F3F3F3; 
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  color: #000000;
+  outline: none;
+  position: absolute;
+  top: 330px;
+  right: 50px;
+}
+.subtotal-total-preco{
+  line-height: 50px;
+  font-size: 20px;
+  position: absolute;
+  top: 80px;
+  right: 50px;
 }
